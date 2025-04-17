@@ -20,7 +20,6 @@ export const emojiToText = (
         res.status(400).json({ message: 'Failed', error: "Invalid input: Not a recognized emoji." });
         return;
     }
-    console.log(found);
     
     res.status(200).json({ message: 'Success', data: found.key });
   } catch (error: any) {
